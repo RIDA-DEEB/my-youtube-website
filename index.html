@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIDATUBE</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="layer"></div>
+    <div id="top-menu">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #0582e2;">
+                <i class="fas fa-bars fa-lg" id="toggler"></i>
+                <b> <a class="navbar-brand" href="index.html">RIDATUBE
+                        <span class="video-icon"><i class="fas fa-stop-circle"></i></span>
+                    </a>
+                </b>
+              
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-lg-auto">
+                        <li class="nav-item first-list-element">
+                            <a class="nav-link" href="#">RECENTLY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="##">SUGGESTED</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="###">TRENDS</a>
+                        </li>
+                    </ul>
+                    <div class="form-inline my-2 my-lg-0" >
+                        <input class="form-control mr-sm-2" type="search" placeholder="search">
+                        <button onclick="location.href='search.html'" class="btn btn-outline-light my-2 my-sm-0"
+                            type="submit">search</button>
+                    </div>
+                </div>
+                <i class="fas fa-search mr-4 search-icon"></i>
+                    <a class="nav-link font-weight-bold" href="index.html" data-toggle="modal" style="color: white;"
+                        data-target="#loginmodel">sign in</a>
+                
+            </nav>
+            <input type="search" class="form-control search-input" placeholder="search for ...">
+            <!-- النافذة الشرطيّة -->
+            <div class="modal fade" id="loginmodel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">sign in</h5>
+                            <button type="button" class="close" data-dismiss="modal">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="email" class="col-form-label">email:</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-form-label">password:</label>
+                                    <input type="password" class="form-control" id="password">
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="" class="mr-auto">forget password</a>
+                            <a href="" class="mx-auto">sign up</a>
+                            <button type="button" class="btn btn-primary login">sign in </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-5">
+                <div id="wrap">
+                    <div class="sidebar">
+                        <ul class="list-group list-group-flush pl-0">
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-home mr-2 purple"></i> main page
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fab fa-algolia mr-2 purple"></i> suggested
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="far fa-plus-square mr-2 purple"></i> recently
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-fire-alt mr-2 purple"></i> trends
+                            </a>
+
+                            <a href="history.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-history mr-2 purple"></i> history
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-film mr-2 purple"></i> films and series
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-gamepad mr-2 purple"></i> video games
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-tshirt mr-2 purple"></i> fashion and beauty
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-graduation-cap mr-2 purple"></i> education
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-cog mr-2 purple"></i> settings
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-question-circle mr-2 purple"></i> help
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--جسم الصفحة الرئيسية-->
+            <div class="row">
+                <div class="content m-4">
+                    <h4 class="my-5">SUGGESTED</h4>
+                    <div class="row card-content m-4">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card p-1 mb-4">
+                                <div class="card-icons">
+                                    <a href="watch.html">
+                                        <img class="card-img-top" src="img/35551.png" alt="Card image cap">
+                                        <time>9:20</time>
+                                        <i class="fas fa-play fa-2x"></i>
+                                    </a>
+                                </div>
+                                <a href="watch.html">
+                                    <div class="card-body p-0">
+                                        <p class="card-title"></p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block"><i class="fas fa-film"></i> <span>3 thousands
+                                                views</span></span>
+                                        <i class="fas fa-clock"></i> <span> 5 monthes ago</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channel-img">
+                                    <img src="" alt="" class="rounded-circle my-2 ml-3" width="30">
+                                    <span class="card-text"> rida</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card p-1 mb-4">
+                                <div class="card-icons">
+                                    <a href="watch.html">
+                                        <img class="card-img-top" src="img/hossam2.jpg" alt="Card image cap">
+                                        <time>5:40</time>
+                                        <i class="fas fa-play fa-2x"></i>
+                                    </a>
+                                </div>
+                                <a href="watch.html">
+                                    <div class="card-body p-0">
+                                        <p class="card-title"> best of hossam </p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block"><i class="fas fa-film"></i> <span>1.2 million
+                                                views</span></span>
+                                        <i class="fas fa-clock"></i> <span> 12 monthes ago</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channel-img">
+                                    <img src="img/houssam1.jpg" alt="" class="rounded-circle my-2 ml-3" width="30">
+                                    <span class="card-text">hossam jnied</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card mb-4 p-1">
+                                <div class="card-icons">
+                                    <a href="watch.html">
+                                        <img class="card-img-top" src="img/kazem1.jpg" alt="Card image cap">
+                                        <time>20:40</time>
+                                        <i class="fas fa-play fa-2x"></i>
+                                    </a>
+                                </div>
+                                <a href="watch.html">
+                                    <div class="card-body p-0">
+                                        <p class="card-title">concert of kazem</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block"><i class="fas fa-film"></i> <span>4 thousands
+                                                views</span></span>
+                                        <i class="fas fa-clock"></i> <span> 6 monthes ago</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channel-img">
+                                    <img src="img/kazem2.jpg" alt="" class="rounded-circle my-2 ml-3" width="30">
+                                    <span class="card-text">kazem saher</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card mb-4 p-1">
+                                <div class="card-icons">
+                                    <a href="watch.html">
+                                        <img class="card-img-top" src="img/mohanad1.jpg" alt="Card image cap">
+                                        <time>9:10</time>
+                                        <i class="fas fa-play fa-2x"></i>
+                                    </a>
+                                </div>
+                                <a href="watch.html">
+                                    <div class="card-body p-0">
+                                        <p class="card-title">exculsive-mohanad</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block"><i class="fas fa-film"></i> <span>2.3 million
+                                                views</span></span>
+                                        <i class="fas fa-clock"></i> <span> 3 monthes ago  </span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channel-img">
+                                    <img src="img/mohanad2.jpg" alt="" class="rounded-circle my-2 ml-3" width="30">
+                                    <span class="card-text">mohanad zaaiter</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card mb-4 p-1">
+                                <div class="card-icons">
+                                    <a href="watch.html">
+                                        <img class="card-img-top" src="img/nancy1.jpg" alt="Card image cap">
+                                        <time>12:40</time>
+                                        <i class="fas fa-play fa-2x"></i>
+                                    </a>
+                                </div>
+                                <a href="watch.html">
+                                    <div class="card-body p-0">
+                                        <p class="card-title">best of</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block"><i class="fas fa-film"></i> <span>500 views</span></span>
+                                        <i class="fas fa-clock"></i> <span> 2 monthes ago</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channel-img">
+                                    <img src="img/nancy2.jpg" alt="" class="rounded-circle my-2 ml-3" width="30">
+                                    <span class="card-text">nancy ajram</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card mb-4 p-1">
+                                <div class="card-icons">
+                                    <a href="watch.html">
+                                        <img class="card-img-top" src="img/takkeh.jpg" alt="Card image cap">
+                                        <time>15:30</time>
+                                        <i class="fas fa-play fa-2x"></i>
+                                    </a>
+                                </div>
+                                <a href="watch.html">
+                                    <div class="card-body p-0">
+                                        <p class="card-title"> takke</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block"><i class="fas fa-film"></i> <span>700 views</span></span>
+                                        <i class="fas fa-clock"></i> <span> 4 monthes ago</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channel-img">
+                                    <img src="img/nassif1jpg.jpg" alt="" class="rounded-circle my-2 ml-3" width="30">
+                                    <span class="card-text"> nassif zeiton</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card mb-4 p-1">
+                                <div class="card-icons">
+                                    <a href="watch.html">
+                                        <img class="card-img-top" src="img/sheeren1.jpg" alt="Card image cap">
+                                        <time>8:35</time>
+                                        <i class="fas fa-play fa-2x"></i>
+                                    </a>
+                                </div>
+                                <a href="watch.html">
+                                    <div class="card-body p-0">
+                                        <p class="card-title">concert</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block"><i class="fas fa-film"></i> <span>1.1 millions
+                                                views</span></span>
+                                        <i class="fas fa-clock"></i> <span>1 year ago </span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channel-img">
+                                    <img src="img/sheeren2.jpg" alt="" class="rounded-circle my-2 ml-3" width="30">
+                                    <span class="card-text"> sheeren abdel wahab</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card mb-4 p-1">
+                                <div class="card-icons">
+                                    <a href="watch.html">
+                                        <img class="card-img-top" src="img/enta maalem.jpg" alt="Card image cap">
+                                        <time>12:45</time>
+                                        <i class="fas fa-play fa-2x"></i>
+                                    </a>
+                                </div>
+                                <a href="watch.html">
+                                    <div class="card-body p-0">
+                                        <p class="card-title">enta maalem song</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block"><i class="fas fa-film"></i> <span>100 thousands
+                                                views</span></span>
+                                        <i class="fas fa-clock"></i> <span> 5 monthes ago</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channel-img">
+                                    <img src="" alt="" class="rounded-circle my-2 ml-3" width="30">
+                                    <span class="card-text">saad mjarad</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card mb-4 p-1">
+                                <div class="card-icons">
+                                    <a href="watch.html">
+                                        <img class="card-img-top" src="img/fairouz.jpg" alt="Card image cap">
+                                        <time>4:20</time>
+                                        <i class="fas fa-play fa-2x"></i>
+                                    </a>
+                                </div>
+                                <a href="watch.html">
+                                    <div class="card-body p-0">
+                                        <p class="card-title"> fairouz</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block"><i class="fas fa-film"></i> <span>900 views</span></span>
+                                        <i class="fas fa-clock"></i> <span> 6 monthes ago</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channel-img">
+                                    <img src="" alt="" class="rounded-circle my-2 ml-3" width="30">
+                                    <span class="card-text"> fairouz</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card mb-4 p-1">
+                                <div class="card-icons">
+                                    <a href="watch.html">
+                                        <img class="card-img-top" src="img/wael.jpg" alt="Card image cap">
+                                        <time>14:26</time>
+                                        <i class="fas fa-play fa-2x"></i>
+                                    </a>
+                                </div>
+                                <a href="watch.html">
+                                    <div class="card-body p-0">
+                                        <p class="card-title">hala sorna soloh</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block"><i class="fas fa-film"></i> <span>1 million
+                                                views</span></span>
+                                        <i class="fas fa-clock"></i> <span> 6 monthes ago</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channel-img">
+                                    <img src="" alt="" class="rounded-circle my-2 ml-3" width="30">
+                                    <span class="card-text">wael kfoury</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card mb-4 p-1">
+                                <div class="card-icons">
+                                    <a href="watch.html">
+                                        <img class="card-img-top" src="img/mhmd.jpg" alt="Card image cap">
+                                        <time>17:20</time>
+                                        <i class="fas fa-play fa-2x"></i>
+                                    </a>
+                                </div>
+                                <a href="watch.html">
+                                    <div class="card-body p-0">
+                                        <p class="card-title">mohmad assaf</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block"><i class="fas fa-film"></i> <span>100 views</span></span>
+                                        <i class="fas fa-clock"></i> <span> 5 days ago</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channel-img">
+                                    <img src="" alt="" class="rounded-circle my-2 ml-3" width="30">
+                                    <span class="card-text"> mohamad assaf</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card mb-4 p-1">
+                                <div class="card-icons">
+                                    <a href="watch.html">
+                                        <img class="card-img-top" src="img/amr.jpg" alt="Card image cap">
+                                        <time>6:35</time>
+                                        <i class="fas fa-play fa-2x"></i>
+                                    </a>
+                                </div>
+                                <a href="watch.html">
+                                    <div class="card-body p-0">
+                                        <p class="card-title">bahebek mout</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block"><i class="fas fa-film"></i> <span> 500
+                                                views</span></span>
+                                        <i class="fas fa-clock"></i> <span> 9 days ago</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channel-img">
+                                    <img src="" alt="" class="rounded-circle my-2 ml-3" width="30">
+                                    <span class="card-text">amro diab</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/995d9ee411.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

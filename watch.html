@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIDATUBE/watch</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/watch.css">
+</head>
+
+<body>
+    <div class="layer"></div>
+    <div id="top-menu">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #0582e2;">
+                <i class="fas fa-bars fa-lg" id="toggler"></i>
+                <b> <a class="navbar-brand" href="index.html">RIDATUBE
+                        <span class="video-icon"><i class="fas fa-stop-circle"></i></span>
+                    </a>
+                </b>
+     
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">RECENTLY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="##">SUGGESTED</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="###">TRENDS</a>
+                        </li>
+                    </ul>
+                    <div class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="search">
+                        <button onclick="location.href='search.html'" class="btn btn-outline-light my-2 my-sm-0"
+                            type="submit">search</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-search mr-4 search-icon"></i>
+                        <a class="nav-link font-weight-bold" href="index.html" data-toggle="modal" style="color: white;"
+                            data-target="#loginmodel">sign in</a>
+                    
+                </nav>
+                <input type="search" class="form-control search-input" placeholder="search for ...">
+            <!-- النافذة الشرطيّة -->
+            <div class="modal fade" id="loginmodel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">sign in</h5>
+                            <button type="button" class="close" data-dismiss="modal">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="email" class="col-form-label">email:</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-form-label">password:</label>
+                                    <input type="password" class="form-control" id="password">
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="" class="mr-auto">forget password</a>
+                            <a href="" class="mx-auto">sign up</a>
+                            <button type="button" class="btn btn-primary login">sign in </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-5">
+                <div id="wrap">
+                    <div class="sidebar">
+                        <ul class="list-group list-group-flush pl-0">
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-home mr-2 purple"></i> main page
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fab fa-algolia mr-2 purple"></i> suggested
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="far fa-plus-square mr-2 purple"></i> recently
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-fire-alt mr-2 purple"></i> trends
+                            </a>
+
+                            <a href="history.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-history mr-2 purple"></i> history
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-film mr-2 purple"></i> films and series
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-gamepad mr-2 purple"></i> video games
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-tshirt mr-2 purple"></i> fashion and beauty
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-graduation-cap mr-2 purple"></i> education
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-cog mr-2 purple"></i> settings
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <i class="fas fa-question-circle mr-2 purple"></i> help
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="watch-page pt-5">
+        <div class="card border-0">
+            <div class="row px-2">
+                <div class="col-lg-7">
+                    <video controls poster="img/rida.jpg" muted loop class="w-100">
+                        <track kind="captions" src="videos/video.mp4" srclang="en" label="english" default>
+                        <source src="videos/video.mp4" type="video/webm">
+                        <source src="videos/video.mp4">
+                        لا يدعم متصفحك العنصر <code>video</code>.
+                    </video>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card-block">
+                        <small class="text-muted">
+                            <i class="fas fa-film"></i> <span>200 k views</span>
+                            <i class="fas fa-clock"></i> <span>4 months ago</span>
+                        </small>
+                        <a href="watch.html">
+                            <h4>calm beautiful songs</h4>
+                        </a>
+                        <p>an awesome singing by wadih morad and the best lyrics by <span id="dots">...</span> <span id="more"> khoury
+                            have a nice time with this video</span>
+                        </p>
+                        <button class="btn btn-info text-secondary mb-4" id="myBtn">show more</button>
+                    </div>
+                    <div class="watch-icons">
+                        <i class="fas fa-heart bg-info rounded-circle p-1" title="love"></i>
+                        <i class="far fa-clock bg-info rounded-circle p-1" title="watch later"></i>
+                        <i class="fas fa-share-square bg-info rounded-circle p-1" title="share"></i>
+                        <i class="far fa-play-circle bg-info rounded-circle p-1" title="add to play list"></i>
+                        <span class="ml-3"> report</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4 px-2">
+                <div class="col-lg-7 order-2 order-lg-1">
+                    <div class="comments">
+                        <div class="comments-details ml-3 mb-3 font-weight-bold">
+                            <span>4 comments</span>
+                            <span class="dropdown">
+                                <button class="btn btn-info text-secondary dropdown-toggle ml-3" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    sort by
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">all</a>
+                                    <a class="dropdown-item" href="#">latest </a>
+                                </div>
+                            </span>
+                        </div>
+                        <div class="public-comments">
+                            <div class="form-group">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"
+                                    placeholder="add comment"></textarea>
+                                <button type="submit" class="btn btn-info text-secondary mt-3">comment</button>
+                                <div class="card mt-5 mb-3 ">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <img src="https://image.ibb.co/jw55Ex/def_face.jpg"
+                                                    class="img img-rounded img-fluid" />
+                                                <p class="text-secondary text-center">40 min ago </p>
+                                            </div>
+                                            <div class="col-10">
+                                                <p>
+                                                    <a class="float-left mt-3 mt-md-4" href="#">
+                                                        <strong> peter smith</strong>
+                                                    </a>
+                                                    <span class="float-right"><i
+                                                            class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-right"><i
+                                                            class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-right"><i
+                                                            class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-right"><i
+                                                            class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-right"><i
+                                                            class="text-warning fa fa-star"></i></span>
+                                                </p>
+                                                <div class="clearfix"></div>
+                                                <p>had a great time listening to this song </p>
+                                                <p>
+                                                    <a class="float-right btn text-white btn-info ml-2 mt-4 reply">
+                                                        <i class="fa fa-reply"></i> reply</a>
+                                                    <a class="float-right btn text-white btn-info mt-4">
+                                                        <i class="fa fa-heart"></i> love</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="card card-inner ml-5 mt-3">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
+                                                        <p class="text-secondary text-center reply-time">20 min ago  </p>
+                                                    </div>
+                                                    <div class="col-10 mt-3 mt-md-4">
+                                                        <p><a href="ch"><strong>rida channel</strong></a></p>
+                                                        <p>hello peter,so glad too hear that,wait for the coming videos.</p>
+                                                        <p>
+                                                            <a class="float-right btn text-white btn-info mt-4"> 
+                                                                <i class="fa fa-heart"></i> love</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mt-5 mb-3 ">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <img src="https://image.ibb.co/jw55Ex/def_face.jpg"
+                                                    class="img img-rounded img-fluid" />
+                                                <p class="text-secondary text-center">2 months ago </p>
+                                            </div>
+                                            <div class="col-10">
+                                                <p>
+                                                    <a class="float-left mt-3 mt-md-4" href="#">
+                                                        <strong> javier gonzalez</strong>
+                                                    </a>
+                                                    <span class="float-right"><i
+                                                            class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-right"><i
+                                                            class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-right"><i
+                                                            class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-right"><i
+                                                            class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-right"><i
+                                                            class="text-warning fa fa-star"></i></span>
+                                                </p>
+                                                <div class="clearfix"></div>
+                                                <p>beautiful</p>
+                                                <p>
+                                                    <a class="float-right btn text-white btn-info ml-2 mt-4 reply">
+                                                        <i class="fa fa-reply"></i> reply</a>
+                                                    <a class="float-right btn text-white btn-info mt-4">
+                                                        <i class="fa fa-heart"></i> love</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="card card-inner ml-5 mt-3">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
+                                                        <p class="text-secondary text-center reply-time">2 months ago  </p>
+                                                    </div>
+                                                    <div class="col-10 mt-3 mt-md-4">
+                                                        <p><a href="ch"><strong>rida channel</strong></a></p>
+                                                        <p>thanks</p>
+                                                        <p>
+                                                            <a class="float-right btn text-white btn-info mt-4"> 
+                                                                <i class="fa fa-heart"></i> love</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <div class="card mt-5 mb-3 ">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <img src="https://image.ibb.co/jw55Ex/def_face.jpg"
+                                                    class="img img-rounded img-fluid" />
+                                                <p class="text-secondary text-center">1 day </p>
+                                            </div>
+                                            <div class="col-10">
+                                                <p>
+                                                    <a class="float-left mt-3 mt-md-4" href="#">
+                                                        <strong> noa holt</strong>
+                                                    </a>
+                                                    <span class="float-right"><i
+                                                            class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-right"><i
+                                                            class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-right"><i
+                                                            class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-right"><i
+                                                            class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-right"><i
+                                                            class="text-warning fa fa-star"></i></span>
+                                                </p>
+                                                <div class="clearfix"></div>
+                                                <p>go ahead man your voice is legandary </p>
+                                                <p>
+                                                    <a class="float-right btn text-white btn-info ml-2 mt-4 reply">
+                                                        <i class="fa fa-reply"></i> reply</a>
+                                                    <a class="float-right btn text-white btn-info mt-4">
+                                                        <i class="fa fa-heart"></i> love</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="card card-inner ml-5 mt-3">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
+                                                        <p class="text-secondary text-center reply-time">1 day  </p>
+                                                    </div>
+                                                    <div class="col-10 mt-3 mt-md-4">
+                                                        <p><a href="ch"><strong>rida channel</strong></a></p>
+                                                        <p>thanks alot ,going ahead to give you the best </p>
+                                                        <p>
+                                                            <a class="float-right btn text-white btn-info mt-4"> 
+                                                                <i class="fa fa-heart"></i> love</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <div class="card mt-5 mb-3 ">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <img src="https://image.ibb.co/jw55Ex/def_face.jpg"
+                                                    class="img img-rounded img-fluid" />
+                                                <p class="text-secondary text-center">3 months </p>
+                                            </div>
+                                            <div class="col-10">
+                                                <p>
+                                                    <a class="float-left mt-3 mt-md-4" href="#">
+                                                        <strong> jamis domas</strong>
+                                                    </a>
+                                                    <span class="float-right"><i
+                                                            class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-right"><i
+                                                            class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-right"><i
+                                                            class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-right"><i
+                                                            class="text-warning fa fa-star"></i></span>
+                                                    <span class="float-right"><i
+                                                            class="text-warning fa fa-star"></i></span>
+                                                </p>
+                                                <div class="clearfix"></div>
+                                                <p>the editing of the video is awesome </p>
+                                                <p>
+                                                    <a class="float-right btn text-white btn-info ml-2 mt-4 reply">
+                                                        <i class="fa fa-reply"></i> reply</a>
+                                                    <a class="float-right btn text-white btn-info mt-4">
+                                                        <i class="fa fa-heart"></i> love</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="card card-inner ml-5 mt-3">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
+                                                        <p class="text-secondary text-center reply-time">3 months  </p>
+                                                    </div>
+                                                    <div class="col-10 mt-3 mt-md-4">
+                                                        <p><a href="ch"><strong>rida channel</strong></a></p>
+                                                        <p>thank youu,hoping to always to like the videos of our channel</p>
+                                                        <p>
+                                                            <a class="float-right btn text-white btn-info mt-4"> 
+                                                                <i class="fa fa-heart"></i> love</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="suggestions col-lg-5 order-1 order-lg-2">
+                    <p>SUGGESTIONS</p>
+                    <div class="cardsug p-2 mb-4">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <img src="img/nancy2.jpg" class="w-100" alt="song">
+                                <time class="time">4:43</time>
+                                <i class="fas fa-play fa-2x"></i>
+                                <!--without w-100 the picture will not be in her right place-->
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-block">
+                                    <a href="watch.html">
+                                        <h6>Nancy Ajram - "Hope Beyond Borders</h6>
+                                    </a>
+                                    <small class="text-muted">
+                                        <i class="fas fa-film"></i> <span>2.7 M views</span>
+                                        <a href="channel.html" class="channel-img">
+                                            <img src="img/R.png" alt="" class="rounded-circle my-2 ml-3" width="30">
+                                            <span class="card-text"> rida</span>
+                                        </a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsug -2 mb-4">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <img src="img/houssam1.jpg" class="w-100" alt="song">
+                                <time>3:24</time>
+                                <i class="fas fa-play fa-2x"></i>
+                                <!--without w-100 the picture will not be in her right place-->
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-block">
+                                    <a href="watch.html">
+                                        <h6>SHAMOUSEH</h6>
+                                    </a>
+                                    <small class="text-muted">
+                                        <i class="fas fa-film"></i> <span>5.8 M views</span>
+                                        <a href="channel.html" class="channel-img">
+                                            <img src="img/R.png" alt="" class="rounded-circle my-2 ml-3" width="30">
+                                            <span class="card-text"> rida</span>
+                                        </a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsug p-2 mb-4">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <img src="img/takkeh.jpg" class="w-100" alt="song">
+                                <time>5:20</time>
+                                <i class="fas fa-play fa-2x"></i>
+                                <!--without w-100 the picture will not be in her right place-->
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-block">
+                                    <a href="watch.html">
+                                        <h6>takke</h6>
+                                    </a>
+                                    <small class="text-muted">
+                                        <i class="fas fa-film"></i> <span>1.4 M views</span>
+                                        <a href="channel.html" class="channel-img">
+                                            <img src="img/R.png" alt="" class="rounded-circle my-2 ml-3" width="30">
+                                            <span class="card-text"> rida</span>
+                                        </a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsug p-2 mb-4">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <img src="img/nassif1jpg.jpg" class="w-100" alt="song">
+                                <time>2:59</time>
+                                <i class="fas fa-play fa-2x"></i>
+                                <!--without w-100 the picture will not be in her right place-->
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-block">
+                                    <a href="watch.html">
+                                        <h6>azmet se2a</h6>
+                                    </a>
+                                    <small class="text-muted">
+                                        <i class="fas fa-film"></i> <span>9.3 M views</span>
+                                        <a href="channel.html" class="channel-img">
+                                            <img src="img/R.png" alt="" class="rounded-circle my-2 ml-3" width="30">
+                                            <span class="card-text"> rida</span>
+                                        </a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsug p-2 mb-4">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <img src="img/mohanad2.jpg" class="w-100" alt="song">
+                                <time>4:28</time>
+                                <i class="fas fa-play fa-2x"></i>
+                                <!--without w-100 the picture will not be in her right place-->
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-block">
+                                    <a href="watch.html">
+                                        <h6>AAM JEN AALIK</h6>
+                                    </a>
+                                    <small class="text-muted">
+                                        <i class="fas fa-film"></i> <span>786 k views</span>
+                                        <a href="channel.html" class="channel-img">
+                                            <img src="img/R.png" alt="" class="rounded-circle my-2 ml-3" width="30">
+                                            <span class="card-text"> rida</span>
+                                        </a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardsug p-2 mb-4">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <img src="img/wael.jpg" class="w-100" alt="song">
+                                <time>3:19</time>
+                                <i class="fas fa-play fa-2x"></i>
+                                <!--without w-100 the picture will not be in her right place-->
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="card-block">
+                                    <a href="watch.html">
+                                        <h6>HALA2 SORNA SOLEH</h6>
+                                    </a>
+                                    <small class="text-muted">
+                                        <i class="fas fa-film"></i> <span>3.9 M views</span>
+                                        <a href="channel.html" class="channel-img">
+                                            <img src="img/R.png" alt="" class="rounded-circle my-2 ml-3" width="30">
+                                            <span class="card-text"> rida</span>
+                                        </a>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/995d9ee411.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/watch.js"></script>
+
+
+
+
+</body>
+
+</html>
